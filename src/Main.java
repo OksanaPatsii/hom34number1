@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-
+        printAllZodiacs();
+        System.out.println(getDescriptionByZodiacSign(ZodiacSigns.AQUARIUS));
     }
     public static void printAllZodiacs(){
         for (ZodiacSigns zodiacSign: ZodiacSigns.values()){
-            System.out.println(" Дата рождения" + zodiacSign.dateOfBirth + "-" + "это" + zodiacSign.zodiacRu);
+            System.out.println(" Дата рождения" + zodiacSign.getDateOfBirth() + "-" + "это " + zodiacSign.getZodiac());
         }
     }
     public static ZodiacSigns getDescriptionByZodiacSign(ZodiacSigns zodiac){
@@ -41,9 +42,7 @@ public class Main {
                 break;
             case PISCES:
                 System.out.println(zodiac + " управитель Плутон подарит творческую жилку, вдохновение, умение копнуть глубоко и наличие своей философии.");
-
         }
-
         return zodiac;
     }
 }

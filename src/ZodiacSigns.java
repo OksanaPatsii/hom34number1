@@ -13,16 +13,17 @@ public enum ZodiacSigns {
     PISCES("Рыбы", "19 февраля – 20 марта");
     final String zodiacRu;
     final String dateOfBirth;
-    ZodiacSigns(String zodiacRu, String dateOfBirth){
-        this.zodiacRu=zodiacRu;
-        this.dateOfBirth=dateOfBirth;
-    }
     public String getZodiac(){
         return zodiacRu;
     }
     public String getDateOfBirth(){
         return dateOfBirth;
     }
+    ZodiacSigns(String zodiacRu, String dateOfBirth){
+        this.zodiacRu=zodiacRu;
+        this.dateOfBirth=dateOfBirth;
+    }
+
 }
 
 
