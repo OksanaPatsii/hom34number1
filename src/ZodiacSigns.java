@@ -20,6 +20,9 @@ public enum ZodiacSigns {
     public String getZodiac(){
         return zodiacRu;
     }
+    public String getDateOfBirth(){
+        return dateOfBirth;
+    }
 }
 
 
