@@ -17,6 +17,9 @@ public enum ZodiacSigns {
         this.zodiacRu=zodiacRu;
         this.dateOfBirth=dateOfBirth;
     }
+    public String getZodiac(){
+        return zodiacRu;
+    }
 }
 
 
